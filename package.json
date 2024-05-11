@@ -1,0 +1,16 @@
+{
+  "name": "pictrue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html2canvas": "^1.4.1",
+    "vite": "^5.2.10"
+  }
+}

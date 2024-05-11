@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="box" id="box">
+        <header>
+            <img src="./img/success.png" alt="" />
+            <span>恭喜你获得CA数字认证</span>
+        </header>
+        <section>
+            <div 
+                v-for="(item, index) in list"
+                ::key="item.id"
+                :class="['box-item', index === list.length -1 ? 'box-item-noBorder': '']"
+            >
+                <span class="item-label">{{ item.label }}</span>
+                <span class="item-value">{{ item.value }}</span>
+            </div>
+        </section>
+    </div>
+
+    <div id="btn">保存至相册</div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.js"></script>
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
